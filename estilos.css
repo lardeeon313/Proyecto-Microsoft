@@ -1,0 +1,393 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    margin: 0 0;
+}
+
+i{color: black;}
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{ font-size: 1.25em;}
+.acento{ color: #16288b;}
+.resaltar{font-style: oblique;}
+
+
+.container{
+    max-width: 1080px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #1B32AD;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #1B32AD;
+}
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("images/Inicio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#inicio h1{
+    color: white;
+}
+
+#inicio a{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #1B32AD;
+}
+
+#inicio a:hover{
+    background-color: #16288b;
+}
+ 
+#quien-soy{
+    display: flex;
+}
+
+#quien-soy .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#quien-soy h3{
+    padding-bottom: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#por-que-entrenar{
+    background-color: #1e2a70;
+    color: white;
+}
+
+#por-que-entrenar li{
+    padding-bottom: 15px;
+    text-align: justify;
+    font-size: 16px;
+    list-style: circle;
+}
+
+#por-que-entrenar h2{
+    padding-bottom: 42px;
+}
+
+#por-que-entrenar h3{
+    padding: 42px;
+}
+
+#por-que-entrenar .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#objetivo{
+    color: white;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url("images/fondo-claro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+#objetivo h2{
+    padding: 35px;
+}
+
+#objetivo .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#mis-rutinas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+#mis-rutinas h2{
+    padding-bottom: 80px;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#mis-rutinas h3{
+    padding-bottom: 25px;
+}
+
+#mis-rutinas .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+
+#mis-rutinas p{
+    display: none;
+}
+
+#mis-rutinas .carta{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 80px;
+    margin: 12px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("images/empuje.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url("images/traccion.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url("images/piernas.jpg");
+}
+
+#mis-rutinas a{ 
+    max-width: 100px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #1B32AD;
+    text-decoration: none;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer li{
+    margin: 16px 0px;
+}
+
+footer h2{
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #inicio h1{
+        font-size: 4em;
+    }
+
+    #quien-soy .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #quien-soy .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quien-soy .img-container{
+        background-image: url("images/quienes-somos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    
+    #por-que-entrenar p{
+        text-align: initial;
+    }
+    
+    #por-que-entrenar .cuanto-entrenar{
+        display: flex;
+        justify-content: center;
+        padding: 60px 0px;
+    }
+
+    #por-que-entrenar .texto{
+        text-align: initial;
+        padding-right: 30px;
+        max-width: 500px;
+    }
+
+    #por-que-entrenar .video{
+        min-width: 420px;
+        min-height: 285px;
+    }
+
+
+    #objetivo .texto{
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #objetivo .video{
+        min-width: 420px;
+        min-height: 285px;
+    }
+
+    #objetivo h3{
+        padding-top: 70px;
+    }
+
+    #objetivo .video-container{
+        padding-top: 0px
+    }
+
+    #mis-rutinas .rutinas {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #mis-rutinas p{
+        display: block;
+        margin-bottom: 30px;
+        max-width: 400px;
+    }
+
+    #mis-rutinas h3{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+
+    #mis-rutinas .carta{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #mis-rutinas a{ 
+        max-width: 100px;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: #1B32AD;
+        text-decoration: none;
+    }
+
+    #mis-rutinas a:hover{
+        background-color: #16288b;
+    }
+
+}
